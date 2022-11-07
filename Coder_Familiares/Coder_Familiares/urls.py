@@ -19,5 +19,5 @@ from AppFamiliares.views import listado_Familiares
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", listado_Familiares)
+    path("inicio/", listado_Familiares)
 ]
