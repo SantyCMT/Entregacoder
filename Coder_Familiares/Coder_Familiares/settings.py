@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Coder_Familiares.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r"D:\coder\Entrega_coder\Coder_Familiares\Coder_Familiares\Plantillas"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
