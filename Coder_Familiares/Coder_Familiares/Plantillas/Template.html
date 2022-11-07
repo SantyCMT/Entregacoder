@@ -7,7 +7,7 @@
     <title>Actividad</title>
 
     
-</head>
+
 <body>
 
     <table>
@@ -19,13 +19,13 @@
             </tr>
         </thead>
         <tbody>
-            {% for item in lista_familia %}
-            <tr>
-                <td>{{item.name}}</td>
-                <td>{{item.date|date:"d-m-y"}}</td>
-                <td>{{item.age}}Edad</td>
+            {% for miembro in listado_familiares %}
             </tr>
+                {% for x in miembro %}
+                     <td>{{x}}</td>
+                {% endfor %}
             {% endfor %}
+            </tr>
         </tbody>
     </table>
     
