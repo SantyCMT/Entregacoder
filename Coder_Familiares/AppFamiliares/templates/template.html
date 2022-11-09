@@ -19,12 +19,26 @@
             </tr>
         </thead>
         <tbody>
-            {% for miembro in listado_familiares %}
+
             </tr>
-                {% for x in miembro %}
-                     <td>{{x}}</td>
-                {% endfor %}
+            {% for miembro in listaFamilia %}
+                <ul>
+                    <td>
+                        {{miembro.name}}
+                    </td>
+                </ul>
+                <ul>
+                    <td>
+                        {{miembro.age}}
+                    </td>
+                </ul>
+                <ul>
+                    <td>
+                        {{miembro.date}}
+                    </td>
+                </ul>
             {% endfor %}
+        
             </tr>
         </tbody>
     </table>
