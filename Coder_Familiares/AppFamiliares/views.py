@@ -7,14 +7,9 @@ from django.template import loader
 def listado_Familiares(request):
     familiares = ListadeFamiliares.objects.all()
 
-    lista_familia = []
+    datos = {"listaFamilia": familiares}
 
-    for miembro in familiares:
-        lista_familia.append((miembro.name, miembro.age, miembro.date))
-
-    datos = {"listaFamilia": lista_familia,}
-
-    plantilla = loader.get_template("Template.html")
+    plantilla = loader.get_template("template.html")
 
     doc = plantilla.render(datos)
 
